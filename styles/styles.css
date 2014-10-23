@@ -33,10 +33,23 @@ img#cameraButton {
     margin: 0 2% 0 0;
 }
 
+#preview {
+    width: 80%; max-width: 300px;
+}
+#preview img {
+    width: 100%;
+}
+.hiddenfile {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+                        
 /*Override*/
 .ui-panel-wrapper {
     min-height: unset !important;
 }
+
 
 
 

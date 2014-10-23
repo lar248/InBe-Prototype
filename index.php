@@ -8,7 +8,7 @@
         <script src="//code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
         
         <script src="js/index.js"></script>
-        
+        <?php require_once("camera.php"); ?>
         <!--Display the data-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     </head>
@@ -46,9 +46,16 @@
               <div role="main" class="ui-content">
                 <a href="#home" data-rel="back" data-direction: "reverse" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Go Back To Page 1</a>
               </div>
-            <video id="video" width="640" height="480" autoplay></video>
-            <button id="snap">Snap Photo</button>
-            <canvas id="canvas" width="640" height="480"></canvas>
+            <div data-role="content">
+                <button id="chooseFile">Choose file</button>
+                <div class="hiddenfile">
+                  <input type="file"  data-clear-btn="false" name="image" accept="image/*" capture>
+                </div>
+                <div id="preview">
+                </div>
+                <ul id="info" data-role="listview" data-inset="true">
+                </ul>
+            </div>
         </div>
         
         
