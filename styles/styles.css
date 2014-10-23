@@ -5,7 +5,7 @@ html, body {
     margin: 0;
 }
 
-#wrapper {
+#homepage {
     
 }
 
@@ -16,21 +16,26 @@ html, body {
 }
 
 img#menuButton, img#cameraButton {
-    top: 50%;
+    top: -5%;
     position: relative;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-15%);
+    -ms-transform: translateY(-15%);
+    transform: translateY(-15%);
 }
 
 img#menuButton {
     float: left;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 2%;
 }
 
 img#cameraButton {
     float: right;
-    margin: 0 20px 0 0;
+    margin: 0 2% 0 0;
+}
+
+/*Override*/
+.ui-panel-wrapper {
+    min-height: unset !important;
 }
 
 
